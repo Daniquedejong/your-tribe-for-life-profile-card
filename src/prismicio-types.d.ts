@@ -85,6 +85,266 @@ export interface InstaTitleSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   title: prismic.KeyTextField;
+
+  /**
+   * camera field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.camera
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  camera: prismic.ImageField<never>;
+
+  /**
+   * arrow field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.arrow
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  arrow: prismic.ImageField<never>;
+
+  /**
+   * pic field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.pic
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  pic: prismic.ImageField<never>;
+
+  /**
+   * ProfileName field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.profilename
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  profilename: prismic.KeyTextField;
+
+  /**
+   * bio field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.bio
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  bio: prismic.KeyTextField;
+
+  /**
+   * circle field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.circle
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  circle: prismic.ImageField<never>;
+
+  /**
+   * story1 field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.story1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  story1: prismic.ImageField<never>;
+
+  /**
+   * story_info1 field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.story_info1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  story_info1: prismic.KeyTextField;
+
+  /**
+   * story2 field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.story2
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  story2: prismic.ImageField<never>;
+
+  /**
+   * story_info2 field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.story_info2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  story_info2: prismic.KeyTextField;
+
+  /**
+   * story3 field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.story3
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  story3: prismic.ImageField<never>;
+
+  /**
+   * story_info3 field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.story_info3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  story_info3: prismic.KeyTextField;
+
+  /**
+   * story4 field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.story4
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  story4: prismic.ImageField<never>;
+
+  /**
+   * story_info4 field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.story_info4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  story_info4: prismic.KeyTextField;
+
+  /**
+   * black_stripe field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.black_stripe
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  black_stripe: prismic.ImageField<never>;
+
+  /**
+   * github_pic field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.github_pic
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  github_pic: prismic.ImageField<never>;
+
+  /**
+   * email_pic field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.email_pic
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  email_pic: prismic.ImageField<never>;
+
+  /**
+   * telephone_pic field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.telephone_pic
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  telephone_pic: prismic.ImageField<never>;
+
+  /**
+   * github_name field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.github_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  github_name: prismic.KeyTextField;
+
+  /**
+   * email_name field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.email_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  email_name: prismic.KeyTextField;
+
+  /**
+   * telephone_number field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.telephone_number
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  telephone_number: prismic.KeyTextField;
+
+  /**
+   * scan_qr field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.scan_qr
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  scan_qr: prismic.ImageField<never>;
+
+  /**
+   * home field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.home
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  home: prismic.ImageField<never>;
+
+  /**
+   * search field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.search
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  search: prismic.ImageField<never>;
+
+  /**
+   * plus field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.plus
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  plus: prismic.ImageField<never>;
+
+  /**
+   * video field in *InstaTitle → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: insta_title.primary.video
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  video: prismic.ImageField<never>;
 }
 
 /**

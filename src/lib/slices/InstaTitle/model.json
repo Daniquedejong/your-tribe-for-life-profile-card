@@ -18,6 +18,205 @@
             "label": "title",
             "placeholder": ""
           }
+        },
+        "camera": {
+          "type": "Image",
+          "config": {
+            "label": "camera",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "arrow": {
+          "type": "Image",
+          "config": {
+            "label": "arrow",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "pic": {
+          "type": "Image",
+          "config": {
+            "label": "pic",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "profilename": {
+          "type": "Text",
+          "config": {
+            "label": "ProfileName",
+            "placeholder": ""
+          }
+        },
+        "bio": {
+          "type": "Text",
+          "config": {
+            "label": "bio",
+            "placeholder": ""
+          }
+        },
+        "circle": {
+          "type": "Image",
+          "config": {
+            "label": "circle",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "story1": {
+          "type": "Image",
+          "config": {
+            "label": "story1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "story_info1": {
+          "type": "Text",
+          "config": {
+            "label": "story_info1",
+            "placeholder": ""
+          }
+        },
+        "story2": {
+          "type": "Image",
+          "config": {
+            "label": "story2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "story_info2": {
+          "type": "Text",
+          "config": {
+            "label": "story_info2",
+            "placeholder": ""
+          }
+        },
+        "story3": {
+          "type": "Image",
+          "config": {
+            "label": "story3",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "story_info3": {
+          "type": "Text",
+          "config": {
+            "label": "story_info3",
+            "placeholder": ""
+          }
+        },
+        "story4": {
+          "type": "Image",
+          "config": {
+            "label": "story4",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "story_info4": {
+          "type": "Text",
+          "config": {
+            "label": "story_info4",
+            "placeholder": ""
+          }
+        },
+        "black_stripe": {
+          "type": "Image",
+          "config": {
+            "label": "black_stripe",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "github_pic": {
+          "type": "Image",
+          "config": {
+            "label": "github_pic",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "email_pic": {
+          "type": "Image",
+          "config": {
+            "label": "email_pic",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "telephone_pic": {
+          "type": "Image",
+          "config": {
+            "label": "telephone_pic",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "github_name": {
+          "type": "Text",
+          "config": {
+            "label": "github_name",
+            "placeholder": ""
+          }
+        },
+        "email_name": {
+          "type": "Text",
+          "config": {
+            "label": "email_name",
+            "placeholder": ""
+          }
+        },
+        "telephone_number": {
+          "type": "Text",
+          "config": {
+            "label": "telephone_number",
+            "placeholder": ""
+          }
+        },
+        "scan_qr": {
+          "type": "Image",
+          "config": {
+            "label": "scan_qr",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "home": {
+          "type": "Image",
+          "config": {
+            "label": "home",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "search": {
+          "type": "Image",
+          "config": {
+            "label": "search",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "plus": {
+          "type": "Image",
+          "config": {
+            "label": "plus",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "video": {
+          "type": "Image",
+          "config": {
+            "label": "video",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {}

@@ -7,3 +7,7 @@
 
 
 <SliceZone slices={data.slices} {components} />
+
+<!-- <pre>
+    {JSON.stringify(data, null, 2)}
+</pre> -->
