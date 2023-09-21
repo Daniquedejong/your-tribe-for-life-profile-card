@@ -1,81 +1,106 @@
 <script>
   /** @type {import("@prismicio/client").Content.InstaTitleSlice} */
   // import client from '../prismic.js';
-  export let slice;
-  // import * as prismic from '@prismicio/client';
 
-  //   const init = async () => {
-  //   const contentText = prismic.asHTML(slice.primary.bio.text, { serializer });
-  // }
-  // init()
-  //   console.log(contentText);
+  export let slice;
+
+  import { fly } from "svelte/transition";
+  import { backOut } from "svelte/easing";
+  import { onMount } from "svelte";
+
+  let animate = false;
+
+  onMount(() => {
+    animate = true;
+  });
 </script>
 
+{#if animate}
+  <section
+    class="visitekaartje"
+    data-slice-type={slice.slice_type}
+    data-slice-variation={slice.variation}
+    in:fly={{ x: -200, easing: backOut, delay: 500 }}
+  >
+    <img src={slice.primary.camera.url} alt="cameraIcon" class="cameraIcon" />
+    <h1 class="titleInstagram">{slice.primary.title}</h1>
+    <img src={slice.primary.arrow.url} alt="arrowIcon" class="arrowIcon" />
 
-<section class="visitekaartje"
-  data-slice-type={slice.slice_type}
-  data-slice-variation={slice.variation}>
+    <img src={slice.primary.pic.url} alt="profilePic" class="profilePic" />
+    <h2 class="profileName">{slice.primary.profilename}</h2>
 
-  <img src={slice.primary.camera.url} alt="cameraIcon" class="cameraIcon" />
-  <h1 class="titleInstagram">{slice.primary.title}</h1>
-  <img src={slice.primary.arrow.url} alt="arrowIcon" class="arrowIcon" />
+    <h3 class="bio">{slice.primary.bio}</h3>
 
-  <img src={slice.primary.pic.url} alt="profilePic" class="profilePic" />
-  <h2 class="profileName">{slice.primary.profilename}</h2>
+    <img src={slice.primary.circle.url} alt="circle1" class="circle1" />
+    <img src={slice.primary.circle.url} alt="circle2" class="circle2" />
+    <img src={slice.primary.circle.url} alt="circle3" class="circle3" />
+    <img src={slice.primary.circle.url} alt="circle4" class="circle4" />
 
-  <h3 class="bio">{slice.primary.bio}</h3>
+    <img src={slice.primary.story1.url} alt="instaStory1" class="instaStory1" />
+    <h3 class="instaStoryInfo1">{slice.primary.story_info1}</h3>
 
-  <img src={slice.primary.circle.url} alt="circle1" class="circle1"/>
-  <img src={slice.primary.circle.url} alt="circle2" class="circle2"/>
-  <img src={slice.primary.circle.url} alt="circle3" class="circle3"/>
-  <img src={slice.primary.circle.url} alt="circle4" class="circle4"/>
+    <img src={slice.primary.story2.url} alt="instaStory2" class="instaStory2" />
+    <h3 class="instaStoryInfo2">{slice.primary.story_info2}</h3>
 
-  <img src={slice.primary.story1.url} alt="instaStory1" class="instaStory1"/>
-  <h3 class="instaStoryInfo1">{slice.primary.story_info1}</h3>
+    <img src={slice.primary.story3.url} alt="instaStory3" class="instaStory3" />
+    <h3 class="instaStoryInfo3">{slice.primary.story_info3}</h3>
 
-  <img src={slice.primary.story2.url} alt="instaStory2" class="instaStory2"/>
-  <h3 class="instaStoryInfo2">{slice.primary.story_info2}</h3>
+    <img src={slice.primary.story4.url} alt="instaStory4" class="instaStory4" />
+    <h3 class="instaStoryInfo4">{slice.primary.story_info4}</h3>
 
-  <img src={slice.primary.story3.url} alt="instaStory3" class="instaStory3"/>
-  <h3 class="instaStoryInfo3">{slice.primary.story_info3}</h3>
+    <img
+      src={slice.primary.black_stripe.url}
+      alt="blackStripe1"
+      class="blackStripe1"
+    />
+    <img
+      src={slice.primary.black_stripe.url}
+      alt="blackStripe2"
+      class="blackStripe2"
+    />
+    <img
+      src={slice.primary.black_stripe.url}
+      alt="blackStripe3"
+      class="blackStripe3"
+    />
+    <img
+      src={slice.primary.black_stripe.url}
+      alt="blackStripe4"
+      class="blackStripe4"
+    />
 
-  <img src={slice.primary.story4.url} alt="instaStory4" class="instaStory4"/>
-  <h3 class="instaStoryInfo4">{slice.primary.story_info4}</h3>
+    <img src={slice.primary.github_pic.url} alt="githubPic" class="githubPic" />
+    <img src={slice.primary.email_pic.url} alt="emailPic" class="emailPic" />
+    <img
+      src={slice.primary.telephone_pic.url}
+      alt="telephonePic"
+      class="telephonePic"
+    />
 
-  <img src={slice.primary.black_stripe.url} alt="blackStripe1" class="blackStripe1" />
-  <img src={slice.primary.black_stripe.url} alt="blackStripe2" class="blackStripe2" />
-  <img src={slice.primary.black_stripe.url} alt="blackStripe3" class="blackStripe3" />
-  <img src={slice.primary.black_stripe.url} alt="blackStripe4" class="blackStripe4" />
+    <h3 class="githubName">{slice.primary.github_name}</h3>
+    <h3 class="emailName">{slice.primary.email_name}</h3>
+    <h3 class="telephoneNumber">{slice.primary.telephone_number}</h3>
 
-  <img src={slice.primary.github_pic.url} alt="githubPic" class="githubPic"/>
-  <img src={slice.primary.email_pic.url} alt="emailPic" class="emailPic"/>
-  <img src={slice.primary.telephone_pic.url} alt="telephonePic" class="telephonePic"/>
+    <img src={slice.primary.scan_qr.url} alt="scanQr" class="scanQr" />
 
-  <h3 class="githubName">{slice.primary.github_name}</h3>
-  <h3 class="emailName">{slice.primary.email_name}</h3>
-  <h3 class="telephoneNumber">{slice.primary.telephone_number}</h3>
-
-  <img src={slice.primary.scan_qr.url} alt="scanQr" class="scanQr" />
-
-  <img src={slice.primary.home.url} alt="homeIcon" class="homeIcon" />
-  <img src={slice.primary.search.url} alt="plusIcon" class="plusIcon" />
-  <img src={slice.primary.plus.url} alt="searchIcon" class="searchIcon" />
-  <img src={slice.primary.video.url} alt="videoIcon" class="videoIcon" />
-  
-</section>
-
+    <img src={slice.primary.home.url} alt="homeIcon" class="homeIcon" />
+    <img src={slice.primary.search.url} alt="plusIcon" class="plusIcon" />
+    <img src={slice.primary.plus.url} alt="searchIcon" class="searchIcon" />
+    <img src={slice.primary.video.url} alt="videoIcon" class="videoIcon" />
+  </section>
+{/if}
 
 <style>
   .visitekaartje {
-    position: relative; 
-    max-width: 15em;  
+    position: relative;
+    max-width: 15em;
     padding-bottom: 25em;
     margin-left: 2em;
     margin-right: 2em;
     margin-top: 3em;
     border-radius: 16px;
     box-shadow: 0 4px 50px 30px rgba(1, 1, 1, 0.1);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
   .cameraIcon {
@@ -90,7 +115,7 @@
     font-size: 24px;
     margin-top: 0.5em;
     margin-left: 2.5em;
-   }
+  }
 
   .arrowIcon {
     position: absolute;
@@ -135,14 +160,14 @@
     margin-top: 10.3em;
     margin-left: 4.1em;
   }
-  
+
   .circle3 {
     position: absolute;
     width: 3em;
     margin-top: 10.3em;
     margin-left: 7.7em;
   }
-  
+
   .circle4 {
     position: absolute;
     width: 3em;
@@ -313,22 +338,18 @@
 
   /*MEDIA QUERIES*/
   @media all and (min-width: 320px) {
- .visitekaartje {
-    margin-left: 2em;
-    margin-right: 2em;
- }
-}
+    .visitekaartje {
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+  }
 
-@media all and (min-width: 600px) {
+  @media all and (min-width: 600px) {
+  }
 
-}
+  @media all and (min-width: 900px) {
+  }
 
-@media all and (min-width: 900px) {
- 
-}
-
-@media all and (min-width: 1200px) {
- 
-}
-
+  @media all and (min-width: 1200px) {
+  }
 </style>
